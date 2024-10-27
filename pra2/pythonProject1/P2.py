@@ -104,7 +104,7 @@
 # new = my_str.strip("you")
 # print(f"{new}")
 
-#序列 切片
+# 序列 切片
 # 对list进行切片，从1开始，4结束，步长1
 # my_list = [0, 1, 2, 3, 4, 5, 6]
 # result1 = my_list[1:4]
@@ -237,4 +237,329 @@
 #       employee_dict["工资"] += 1000
 #       my_dict[key] = employee_dict
 #       print(my_dict)
+
+
+# 容器通用排序功能 排序结果变列表
+# my_list = [2,5,1,8]
+# print(f"{sorted(my_list)}")
+# print(f"{sorted(my_list, reverse=True)}")
+
 #
+# def test_return():
+#     return 1,2,3
+# x,y,z = test_return()
+# print(x,y,z)
+# f = open(r"D:\test.txt","r",encoding = "UTF-8")
+# # print(f.read(2))
+# # print(f.read())
+# lines = f.readlines()
+# print(lines)
+
+
+# class Clock:
+#     id = None
+#     price = None
+#
+#
+#     def ring(self):
+#         import winsound
+#         winsound.Beep(2000,3000)
+#
+# clock1 = Clock()
+# clock1.id = "00302"
+# clock1.price = 19.99
+# print(f"闹钟ID：{clock1.id},价格：{clock1.price}")
+# clock1.ring()
+
+#
+# class Information:
+#     def __init__(self,name,age,tel):
+#         self.name = name
+#         self.age = age
+#         self.tel = tel
+# for num in range(1,11):
+#
+#     Information1 = Information(input("请输入姓名："),input("请输入年龄"),input("请输入手机号："))
+#     print(Information1.name)
+#     print(Information1.age)
+#     print(Information1.tel)
+
+
+# class Phone:
+#     __is_5g_enable = False
+#
+#
+#     def __check_5g(self):
+#         if self.__is_5g_enable:
+#             print("5g开启")
+#         else:
+#             print("5g关闭")
+#
+#     def call_by_5g(self):
+#         self.__check_5g()
+#         print("正在通话中")
+#
+#
+# phone = Phone()
+# phone.call_by_5g()
+
+# class Phone:
+#     IMEI = None
+#     producer = "YOUTUBE"
+#
+#     def call_by_4g(self):
+#         print("4g通话")
+# class Phone2024(Phone):
+#     face_id = "10001"
+#     def call_by_5g(self):
+#         print("最新5g通话")
+#
+# phone = Phone2024()
+# print(phone.producer)
+# phone.call_by_4g()
+# phone.call_by_5g()
+
+#
+# print(6/2)
+# print(10//3)
+# print("hello"*2)
+
+# 38979s
+# time = 38979
+# hour = time // 3600
+# minute = time % 3600 // 60
+# second = time % 60
+# print(f"{hour}小时{minute}分钟{second}秒")
+
+#
+# weight = float(input('请输入您的体重(kg)'))
+# height = float(input('请输入您的身高(m)'))
+# BMI = weight / height ** 2
+# if 18.5 < BMI <24.9:
+#     print('您的身高体重正常')
+
+
+# 猜拳游戏
+# import random
+# player = int(input("请输入 (0)剪刀 (1)石头 (2)布："))
+# computer = random.randint(0,2)
+# print("玩家出的是", player)
+# print("电脑出的是", computer)
+# if((computer==1 and player == 0)or(computer==0 and player == 2)or(computer==2 and player == 1)):
+#     print("loser")
+# elif(computer == player):
+#     print("ping")
+# else:
+#     print("winner")
+# i=0
+# result =0
+# while i<100:
+#     i += 1
+#     result += i
+# print(result)
+# j=0
+# while j<5:
+#     j += 1
+#     i=0
+#     while i<j:
+#         print("*", end = " ")
+#         i += 1
+#     print()
+#
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         print(f"{j}*{i}={j*i}\t",end=" ")
+#     print()
+
+# 百马百担
+
+# for max in range(0,100//3+1):
+#     for min in range(0,100//2+1):
+#         if max*3+min*2+(100-max-min)*0.5==100:
+#             print(max,min,100-max-min)
+#
+
+# 珠穆朗玛峰
+
+# height = 0.08/1000
+# count = 0
+# while True:
+#     height *= 2
+#     count += 1
+#     if height >= 8848.13:
+#
+#         break
+#
+# print(count)
+
+# print('welcome to game'.center(50, '*'))
+# print('   you   '.strip())
+# print('   +++new++++'.strip('+'))
+
+# 将列表转换成字符串
+# fruits = ['apple','pear','peach','year']
+# print('-'.join(fruits))
+
+
+# 冒泡排序,
+# my_list = [5, 6, 9, 10, 2, 4]
+# length = len(my_list)
+# i = 0
+# while i < (length - 1):
+#     n = 0
+#     while n < (length - 1 - i):
+#         if my_list[n] > my_list[n + 1]:
+#             my_list[n], my_list[n + 1] = my_list[n + 1], my_list[n]
+#         n += 1
+#     i += 1
+#     print(my_list)
+
+# nums = [6, 2, 3, 4, 5, 1, 0]
+# nums.sort(reverse=True)
+# print(nums)
+#
+# x = sorted(nums)
+# print(nums)
+# print(x)
+
+#
+# names = ['zhangsan', 'lisi', 'chris', 'jerry', 'henry']
+# name = input("请输入姓名：")
+# for name1 in names:
+#     if name == name1:
+#         print('姓名已存在')
+#         break
+# else:
+#         names.append(name)
+#         print(names)
+# if name in names:
+#     print("已存在")
+# else:
+#     names.append(name)
+#     print(names)
+# rooms = [['h','y'],['r','p','o','i'],['g']]
+# for i,room in enumerate(rooms):
+#     print(f"房间{i}里一共有{len(room)}个老师，分别是：",end = "")
+#     for teacher in room:
+#         print(teacher,end ="\t")
+#     print()
+
+# nums = [i for i in range(10)]
+# print((nums))
+
+
+# nums = []
+# for i in range(10):
+#     nums.append(i)
+# print(nums)
+
+# x = [i for i in range(10) if i % 2 == 0]
+# print((x))
+# y = [i for i in range(10) if i % 2]
+# print(y)
+#
+# points = [(x,y) for x in range(5,9)for y in range(10,20)]
+# print(points)
+
+#
+# chars = ['c', 'h', 't', 'd', 'c', 'a', 'a', 'q', 'p']
+# char_count = {}
+# for char in chars:
+#     if char in char_count:
+#         char_count[char] += 1
+#     else:
+#         char_count[char] = 1
+# print(char_count)
+# if char not in char_count:
+#     char_count[char] =chars.count(char)
+# persons=[
+#     {'name':'zhangsan','age':'18'}
+#
+#
+# ]
+# x=input('请输入您的姓名：')
+# for person in persons:
+#     if person['name'] ==x:
+#         print('您输入的用户已存在')
+#         break
+# else:
+#     new_person={'name':x}
+#     y=int(input('请您输入您的年龄：'))
+#     new_person['age']=y
+#     persons.append(new_person)
+#     print(persons)
+
+#
+# dict1={'a':100,'b':200,'x':500}
+# # dict2={}
+# # for v,k in dict1.items():
+# #     dict2[k]=v
+# # print(dict2)
+# # dict1=dict2
+#
+# dict1={v:k for k,v in dict1.items()}
+# print(dict1)
+
+# 声明一个列表 存入学生信息
+# 将列表按学生成绩从大到小排序
+
+# students = [
+#     {'name':'jack','age':'18','score':'56','phone':'13254876','gender':'female'},
+#     {'name':'张三','age':'25','score':'98','phone':'13252876','gender':'male'},
+#     {'name':'李四','age':'15','score':'92','phone':'13254856','gender':'female'},
+#     {'name':'王五','age':'19','score':'60','phone':'13254878','gender':'male'},
+#     {'name':'嘻嘻','age':'16','score':'23','phone':'13254876','gender':'unknown'},
+#     {'name':'富翁','age':'22','score':'88','phone':'13254846','gender':'female'}
+#
+# ]
+#
+# # 统计不及格的学生的个数
+# # 打印不及格学生的名字和对应的成绩
+# count =0
+# for student in students:
+#     if student['score']<"60":
+#         count+=1
+#         print(f"{student['name']}不及格，分数为{student['score']}")
+# # 统计未成年学生的个数
+# num=0
+# for minimum in students:
+#     if minimum['age']<'18':
+#         num+=1
+# print(num)
+#
+# # 打印手机尾号是8的学生名字
+#
+# for cell in students:
+#     # if cell['phone'][-1]=="8":
+#     #     print(f"cell['name]")
+#     if cell['phone'].endswith('8'):
+#         print(f"{cell['name']}")
+#
+# max_score1 = students[0]['score']
+# # 打印最高分和对应的学生的名字
+# for max_score in students:
+#     if max_score['score']>max_score1:
+#         max_score1 = max_score['score']
+# print(max_score1)
+#
+#
+# # 删除性别不明的所有学生
+#
+# new_students = [x for x in students if x['gender']!='unknown']
+# print(new_students)
+# for j in range(0,len(students)-1):
+#     for i in range(0,len(students)-1-j):
+#      if students[i]['score']>students[i+1]['score']:
+#         students[i],students[i+1]=students[i+1],students[i]
+# print(students)
+
+
+# 用三个元组表示三门学科的选课学生姓名
+# 求选课学生总共有多少人
+# 求只选了第一个学科的人的数量和对应的名字
+# 求只选了一门学科的学生的数量和对应的名字
+# 求只选了两门学科的学生的数量和对应的名字
+# 求选了三门学生的学生的数量和对应的名字
+sing = ('李白','白居易','李清照','杜甫','王昌龄','王维')
+dance = ('李商隐','杜甫','白居易','李白','孟浩然','李商隐','王安石')
+thrid = ('苏轼','王昌龄','岑参','刘禹锡','李清照')
